@@ -3,22 +3,18 @@ import { useState, useEffect, Dispatch, SetStateAction } from "react"
 type Response<T> = [T, Dispatch<SetStateAction<T>>]
 
 function usePersistedState<T>(key: string, initialState: T): Response<T> {
-  const [state, setState] = useState(initialState)
+  const [state, setState] = useState<T>(() => {
+    let storageValue: string
+    if (typeof window !== "undefined") {
+      storageValue = localStorage.getItem(key)
+    }
 
-  useEffect(() => {
-    setState(() => {
-      let storageValue: string
-      if (typeof window !== "undefined") {
-        storageValue = localStorage.getItem(key)
-      }
-
-      if (storageValue) {
-        return JSON.parse(storageValue as never)
-      } else {
-        return initialState
-      }
-    })
-  }, [])
+    if (storageValue) {
+      return JSON.parse(storageValue)
+    } else {
+      return initialState
+    }
+  })
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(state))
