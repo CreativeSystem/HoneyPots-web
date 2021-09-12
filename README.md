@@ -1,13 +1,26 @@
-# **HoneyPots**
+<p align="center">
+    <img src="https://github.com/CreativeSystem/honeypots-web/blob/main/public/assets/logo-honeypots.png" height="128">
+    <h1 align="center" style="font-weight:bold">HoneyPots</h1>
+</p>
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a
+    aria-label="Style"
+    href="http://standardjs.com">
+    <img
+      alt=""
+      src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
+  </a>
+  <a
+    aria-label="License"
+    href="https://opensource.org/licenses/MIT">
+    <img
+      alt=""
+      src="https://img.shields.io/badge/License-MIT-green.svg">
+  </a>
+</p>
 
-<div class="d-flex justify-content-left">
-  <img alt="Honeypots Logo" src="./assets/logo-honeypots.jpeg" width="45%"/>
-</div>
-
-Honeypots is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Honeypots is a recipe sharing, social network project, bootstrapped with [  create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -20,3 +33,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Authors
+
+- Eliel Silveira
+- Felipe Goulart
+- Leonardo Ferreira Lima
